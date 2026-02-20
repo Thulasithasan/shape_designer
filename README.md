@@ -18,7 +18,7 @@ Shape Designer API allows users to manage geometric shapes. Each shape has attri
 ### Prerequisites
 - Java 21+
 - Maven 4+
-- PostgreSQL
+- Mysql
 - Git
 
 ### Backend Setup
@@ -43,7 +43,7 @@ Base URL: http://localhost:8080/api/shapes
 
 ## Tech Stack
 - Java, Spring Boot, Spring Data JPA
-- PostgreSQL
+- Mysql
 - Maven
 - Jackson
 - Lombok
