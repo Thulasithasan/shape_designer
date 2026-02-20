@@ -4,6 +4,8 @@ import com.thulasi.shape_designer.dto.response.DimensionDto;
 import com.thulasi.shape_designer.util.converter.DimensionDtoConverter;
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
@@ -13,6 +15,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@EntityListeners(AuditingEntityListener.class)
 @Table(name = "shapes")
 public class Shape {
     @Id
@@ -28,5 +31,7 @@ public class Shape {
     @Convert(converter = DimensionDtoConverter.class)
     private DimensionDto dimensionData;
 
+    @CreatedDate
+    @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 }

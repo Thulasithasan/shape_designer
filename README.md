@@ -26,7 +26,7 @@ Shape Designer API allows users to manage geometric shapes. Each shape has attri
    git clone https://github.com/Thulasithasan/shape_designer_be
    cd shape-designer
 2. Install dependencies:
-   mvn clean install
+   mvn clean install -DskipTests
    3Run the application:
    mvn spring-boot:run
    4Access API at http://localhost:8080/api/shapes

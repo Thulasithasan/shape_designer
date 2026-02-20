@@ -104,6 +104,7 @@ public class ShapeServiceImpl implements ShapeService {
                 .name(shape.getName())
                 .type(shape.getType())
                 .dimensionData(shape.getDimensionData())
+                .createdAt(shape.getCreatedAt())
                 .build();
     }
 
